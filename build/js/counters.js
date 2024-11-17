@@ -1,5 +1,5 @@
 // Import library
-import {CountUp} from '/node_modules/countup.js/dist/countUp.min.js';
+import {CountUp} from '/build/js/countUp.min.js';
 
 // Custom counters
 const income = new CountUp("income-heading", 6, {

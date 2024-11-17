@@ -8,8 +8,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "countup.js": "^2.8.0"
-  }
+  "description": ""
 }
