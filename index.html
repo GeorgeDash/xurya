@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth text-[16px]">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="build/css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- Counters (library from: https://github.com/inorganik/countUp.js) -->
+        <script type="module" src="/build/js/counters.js"></script>
+        <!-- Counters (library from: https://github.com/inorganik/countUp.js) -->
+        <title>Xurya</title>
+    </head>
+    <body class="min-h-screen w-full flex flex-col items-center overflow-x-hidden relative pt-5">
+        <header class="w-full flex justify-between items-center mb-8 px-6">
+            <a href="index.html" class="flex space-x-2 items-center text-[1.25rem]">
+                <img src="/build/img/main-logo.png" alt="main logo" class="size-7">
+                <h1>Xurya</h1>
+            </a>
+            <nav id="main-nav" class="flex justify-center items-center z-[9999] font-light border border-lightgray backdrop-blur-lg rounded-full px-5 py-2.5 fixed left-1/2 -translate-x-1/2">
+                <ul class="space-x-9 *:relative *:pb-1 *:after:content-[''] *:after:h-0.5 *:after:w-full *:after:bg-black *:after:opacity-0 *:after:absolute *:after:bottom-0 *:after:left-0 *:after:transition-opacity *:after:duration-375">
+                    <a href="#home" class="hover:after:opacity-100">Home</a>
+                    <a href="#about-us" class="hover:after:opacity-100">About us</a>
+                    <a href="#features" class="hover:after:opacity-100">Features</a>
+                    <a href="#services" class="hover:after:opacity-100">Services</a>
+                    <a href="#reviews" class="hover:after:opacity-100">Reviews</a>
+                    <a href="#contacts" class="hover:after:opacity-100">Contacts</a>
+                </ul>
+            </nav>
+            <div class="buttons flex justify-center space-x-2 items-center">
+                <button id="login" class="border border-gray rounded-full py-2 px-4 transition-all duration-375 hover:bg-gray hover:text-white">Login</button>
+                <button id="get-in-touch" class="w-fit bg-green text-white border border-green rounded-full py-2 px-4 transition-all duration-375 hover:bg-transparent hover:text-green">Get in touch</button>
+            </div>
+        </header>
+        <main class="min-h-screen w-full flex flex-col items-center">
+            <div id="home" class="w-[calc(100%-48px)] bg-home bg-center bg-no-repeat bg-cover text-white rounded-[3rem] py-64 pl-28 relative scroll-mt-5">
+                <div class="heading-wrapper">
+                    <h5 class="text-[1.15rem]">#1 Energy provider in the world</h5>
+                    <h2 class="flex flex-col flex-nowrap text-[6rem] leading-[1.15] my-8">
+                        <p class="bg-gradient-to-r from-white to-gray/[.5] bg-clip-text text-transparent">New Energy</p>
+                        <p class="bg-gradient-to-r from-white to-gray/[.75] bg-clip-text text-transparent">for the Future</p>
+                    </h2>
+                    <div class="links flex space-x-9">
+                        <a href="javascript:;" class="w-fit flex space-x-3 items-center relative after:content-[''] after:h-full after:w-[calc(100%-5px)] after:border-b-2 after:pointer-events-none after:absolute after:-bottom-4 after:transition-width after:duration-375 after:hover:w-0">
+                            <p>Get in touch</p> 
+                            <i class='bx bx-right-arrow-alt text-[1.5rem] -rotate-45'></i>
+                        </a>
+                        <a href="javascript:;" class="w-fit flex space-x-3 items-center relative after:content-[''] after:h-full after:w-[calc(100%-5px)] after:border-b-2 after:pointer-events-none after:absolute after:-bottom-4 after:transition-width after:duration-375 after:hover:w-0">
+                            <p>Our services</p> 
+                            <i class='bx bx-right-arrow-alt text-[1.5rem] -rotate-45'></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="recent-project" class="size-[360px] backdrop-blur-[8px] rounded-2xl p-3 absolute top-36 right-48">
+                    <img src="/build/img/recent.jpg" alt="recent project image" class="size-56 rounded-2xl">
+                    <a href="javascript:;" class="bx bx-dots-horizontal-rounded text-[2rem] text-white/[.5] transition-colors duration-375 hover:text-white absolute top-2 right-4"></a>
+                    <div class="heading w-full flex items-end space-x-24 absolute bottom-4">
+                        <a href="javascript:;" class="size-12 flex flex-shrink-0 justify-center items-center rounded-full text-[2.5rem] border border-white transition-all duration-375 hover:bg-white hover:text-green">
+                            <i class='bx bx-right-arrow-alt -rotate-45'></i>
+                        </a>
+                        <h3 class="text-[1.75rem] leading-tight">Discover our recent project</h3>
+                    </div>
+                </div>
+                <div id="statistics" class="w-[55%] flex space-x-6 items-center bg-white text-black rounded-[3rem] py-16 pl-16 pr-2 absolute -right-1 bottom-0">
+                    <div id="income" class="leading-tight">
+                        <h3 id="income-heading" class="text-[4rem] font-bold">6</h3>
+                        <p class="text-[1.25rem] text-gray">The company's annual net income</p>
+                    </div>
+                    <div id="projects" class="leading-tight">
+                        <h3 id="projects-heading" class="text-[4rem] font-bold">315</h3>
+                        <p class="text-[1.25rem] text-gray">Projects completed worldwide</p>
+                    </div>
+                    <div id="employees" class="leading-tight">
+                        <h3 id="employees-heading" class="text-[4rem] font-bold">120</h3>
+                        <p class="text-[1.25rem] text-gray">Employees work in all parts of the world</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about-us" class="w-[85%] mt-40 scroll-mt-20">
+                <div class="heading w-full flex space-x-40 items-center">
+                    <h2 class="text-[2.5rem]">Focusing on quality, <span class="text-gray">we maintain customer trust</span></h2>
+                    <p class="text-[1.1rem] text-gray">We ensure that every installation we build has strict quality checks. Sustainable solutions for an environmentally friendly and renewable future.</p>
+                </div>
+                <div id="sponsors-wrapper" class="w-full flex justify-center space-x-10 mt-28 mb-36">
+                    <div id="trend-micro" class="sponsor">
+                        <img src="/build/img/sponsors/trend-micro.png" alt="trend micro logo">
+                    </div>
+                    <div id="telia-cygate" class="sponsor">
+                        <img src="/build/img/sponsors/telia-cygate.png" alt="telia cygate logo">
+                    </div>
+                    <div id="orange-business" class="sponsor">
+                        <img src="/build/img/sponsors/orange-business.png" alt="orange business logo">
+                    </div>
+                    <div id="headspace" class="sponsor">
+                        <img src="/build/img/sponsors/headspace.png" alt="headspace logo">
+                    </div>
+                    <div id="medtronic" class="sponsor">
+                        <img src="/build/img/sponsors/medtronic.png" alt="medtronic logo">
+                    </div>
+                </div>
+            </div>
+            <div id="features" class="w-full flex flex-col items-center bg-lightgray px-36 pt-40 pb-36 -scroll-mt-20">
+                <h2 class="w-[55%] text-[2.5rem] text-center">We offer quality, <span class="text-gray">with the best material and service</span></h2>
+                <div id="reasons" class="w-full flex flex-col flex-auto bg-white rounded-xl mt-20">
+                    <div class="first-row w-full flex">
+                        <div id="security" class="reason rounded-tl-xl">
+                            <i class='bx bxs-layer'></i>
+                            <div class="desc">
+                                <h4>Layered security</h4>
+                                <p>With layered security, we ensure the safety of every unit we provide.</p>
+                            </div>
+                        </div>
+                        <div id="control" class="reason">
+                            <i class='bx bx-check-double'></i>
+                            <div class="desc">
+                                <h4>Quality control of each part</h4>
+                                <p>Every unit you send is checked carefully for every detail.</p>
+                            </div>
+                        </div>
+                        <div id="service" class="reason rounded-tr-xl">
+                            <i class='bx bxs-chat'></i>
+                            <div class="desc">
+                                <h4>Reliable customer service</h4>
+                                <p>Our customer service is available 24 hours a week, with qualified people.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-row w-full flex">
+                        <div id="manual" class="reason rounded-bl-xl">
+                            <i class='bx bxs-book'></i>
+                            <div class="desc">
+                                <h4>Maintenance manual book</h4>
+                                <p>We provide a guidebook that can be used to ensure maximum care.</p>
+                            </div>
+                        </div>
+                        <div id="delivery" class="reason">
+                            <i class='bx bxs-package'></i>
+                            <div class="desc">
+                                <h4>Delivered safely</h4>
+                                <p>Every unit we send arrives safely and quickly, without any obstacles or drama.</p>
+                            </div>
+                        </div>
+                        <div id="ai" class="reason rounded-br-xl">
+                            <i class='bx bxs-brain'></i>
+                            <div class="desc">
+                                <h4>Based on artificial intelligence</h4>
+                                <p>You can control and view each unit from your phone, it's very easy to use.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="services" class="w-[85%] flex justify-between items-start pt-40">
+                <div id="services-wrapper" class="w-2/5 flex flex-col space-y-48">
+                    <div class="heading w-full space-y-10">
+                        <h2 class="text-[2.5rem]">Trusted service, <span class="text-gray">for your various needs</span></h2>
+                        <button id="get-in-touch" class="w-fit flex space-x-3 items-center bg-green text-white border border-green rounded-full px-6 py-4 transition-all duration-375 hover:bg-transparent hover:text-green">
+                            <p>Get in touch</p>
+                            <i class='bx bx-right-arrow-alt text-[1.5rem] -rotate-45'></i>
+                        </button>
+                    </div>
+                    <div id="services-table" class="flex flex-col gap-4">
+                        <div class="first-row w-full flex space-x-4">
+                            <div class="service">
+                                <h4>01</h4>
+                                <h5>Solar panels for home</h5>
+                                <a href="javascript:;">View details</a>
+                            </div>
+                            <div class="service">
+                                <h4>02</h4>
+                                <h5>Solar panels for undustry</h5>
+                                <a href="javascript:;">View details</a>
+                            </div>
+                        </div>
+                        <div class="second-row w-full flex space-x-4">
+                            <div class="service">
+                                <h4>03</h4>
+                                <h5>Solar panels for chargers</h5>
+                                <a href="javascript:;">View details</a>
+                            </div>
+                            <div class="service">
+                                <h4>04</h4>
+                                <h5>Wind power generator</h5>
+                                <a href="javascript:;">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="/build/img/services.jpg" alt="services photo" class="h-[900px] rounded-xl">
+            </div>
+            <div id="reviews" class="w-[85%] mt-80 flex flex-col items-center">
+                <h2 class="w-[35%] text-[2.5rem] text-center">See how we solve problems, <span class="text-gray">right on target</span></h2>
+                <div id="review" class="w-full flex flex-col space-y-9 items-center ">
+                    <div id="review-wrapper" class="w-full flex justify-between items-center bg-lightgray rounded-xl mt-24 p-4 pl-16">
+                        <div id="details" class="w-2/5">
+                            <img src="/build/img/sponsors/medtronic.png" alt="medtronic logo" class="w-52 grayscale py-10">
+                            <p class="text-[1.2rem]">"We have used services from Xurya for most of our stations, this is our strategic step to continue to increase the number of solar panel usage for our stations, we are very satisfied with the services from Xurya."</p>
+                            <button id="view-case" class="w-fit bg-green text-white border border-green rounded-full mt-8 mb-28 px-4 py-3 transition-all duration-375 hover:bg-transparent hover:text-green">View case study</button>
+                            <h6 class="text-[1.15rem] font-bold">Jennifer Kolobaly - <span class="text-gray font-normal">CTO EV Medtronic</span></h6>
+                        </div>
+                        <img src="/build/img/reviews.jpg" alt="reviews photo" class="w-[55%] rounded-xl">
+                    </div>
+                    <div id="controls" class=""></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
