@@ -24,7 +24,7 @@ module.exports = {
         "green": "#00d74e"
       },
       backgroundImage: {
-        "home": "url('/build/img/cover.jpeg')"
+        "home": "url('/build/img/cover.jpeg')",
       },
       transitionDuration: {
         "375": "375ms"
